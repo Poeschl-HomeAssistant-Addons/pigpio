@@ -9,7 +9,7 @@ RUN apt-get update && apt-get -y --no-install-recommends install \
         build-essential=12.9
 
 # Choose right version for architecture
-RUN bash -c '[[ $(dpkg --print-architecture) == "armel" ]] && apt-get install -y --no-install-recommends python3-setuptools=52.0.0-4 || apt-get install -y --no-install-recommends python3-setuptools=52.0.0-4+deb11u1'
+RUN bash -c '[[ $(dpkg --print-architecture) == "armel" ]] && apt-get install -y --no-install-recommends python3-setuptools=52.0.0-4 || apt-get install -y --no-install-recommends python3-setuptools=52.0.0-4+deb11u2'
 
 # hadolint ignore=DL3003
 RUN git config --global advice.detachedHead false && \
