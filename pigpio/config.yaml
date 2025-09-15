@@ -4,7 +4,6 @@ slug: pigpio
 description: Control your pwm leds with pigpio on Home Assistant
 url: https://github.com/Poeschl-HomeAssistant-Addons/pigpio
 arch:
-  - armhf
   - armv7
   - aarch64
 startup: services
